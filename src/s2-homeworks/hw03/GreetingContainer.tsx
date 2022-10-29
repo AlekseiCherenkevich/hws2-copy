@@ -13,12 +13,13 @@ export const pureAddUser = (
     setName: (name: string) => void,
     addUserCallback: (name: string) => void) => {
     // если имя пустое - показать ошибку, иначе - добавить юзера и очистить инпут
-    if (name.trim() === '') {
+    if (!name.trim()) {
         setError('Ошибка! Введите имя!')
+        setName(name)
     } else {
         addUserCallback(name)
+        setName('')
     }
-    setName(name)
 }
 
 export const pureOnBlur = (name: string, setError: (name: string) => void) => { // если имя пустое - показать ошибку
