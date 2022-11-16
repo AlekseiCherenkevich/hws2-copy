@@ -1,5 +1,26 @@
-.buttonsContainer {
+.buttonsContainer > button {
+    margin-right: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+
+.buttonsContainer > button:nth-child(1) {
+    background-color: #0066CC;
+    color: white;
+}
+
+.buttonsContainer > button:nth-child(2) {
+    background-color: white;
+    color: #0066CC;
 }
 
 .editableSpanContainer {
+    padding: 20px;
+}
+
+.editableSpanContainer > div > img {
+    margin-right: 10px;
+    transform: translateY(30%);
 }
