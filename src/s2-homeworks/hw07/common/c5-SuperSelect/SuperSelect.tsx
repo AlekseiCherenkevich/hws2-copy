@@ -33,9 +33,11 @@ const SuperSelect: React.FC<SuperSelectPropsType> = ({
                   {o.value}
               </option>
           ))
-        : [] // map options with key
+        : [] // map options with keys
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
+        onChangeOption && onChangeOption(e.target.value)
+        onChange && onChange(e)
         // делают студенты
     }
 
