@@ -11,12 +11,16 @@
 }
 
 .secondary {
-    background: #C9E5FF;
     border: 1px solid #0066CC;
+    background-color: white;
+    color: #0066CC;
 }
 
 .default {
-    background: #0080FF;
+    background: #0066CC;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
+    color: white;
 }
 
 .red {
