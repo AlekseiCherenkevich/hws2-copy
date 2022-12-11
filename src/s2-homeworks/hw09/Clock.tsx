@@ -33,11 +33,6 @@ function Clock() {
         setShow(false)
     }
 
-    const formatMonth = () => {
-        const month = date.getUTCMonth() + 1
-        return getLeadingZero(month)
-    }
-
     function getLeadingZero(p: number) {
         return p < 10 ? '0' + p : p
     }
@@ -61,7 +56,7 @@ function Clock() {
         return arr[date.getDay()]
     }
     const getMonth = () => {
-        const arr =  ['December', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November']
+        const arr =  ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
         return arr[date.getUTCMonth()]
     }
 
