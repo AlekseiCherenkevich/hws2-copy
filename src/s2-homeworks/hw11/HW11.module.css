@@ -2,7 +2,42 @@
 }
 
 .wrapper {
+    display: flex;
+}
+
+.wrapper>span:nth-child(2) {
+    width: 147px;
+    height: 4px;
+}
+
+.wrapper>span:nth-child(2)>span:first-child {
+    color: black;
+}
+
+.wrapper>span:nth-child(2)>span:nth-child(2) {
+    color: #00CC22;
+}
+
+.wrapper>span:nth-child(2)>span:nth-child(3),
+.wrapper>span:nth-child(2)>span:nth-child(4){
+    width: 18px;
+    height: 18px;
+    color: white;
+    border: 1px solid #00CC22;
+}
+
+.wrapper>span:nth-child(2)>span:nth-child(3):before,
+.wrapper>span:nth-child(2)>span:nth-child(4):before{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #00CC22;
 }
 
 .number {
+    margin: 0 5px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    transform: translateY(3px);
 }
