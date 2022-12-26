@@ -2,10 +2,25 @@
     --header_height: 60px;
 }
 
+[data-theme='1'] {
+    --color: #000000;
+    --background: #FFFFFF;
+}
+
+[data-theme='2'] {
+    --color: #000000;
+    --background: #DDEEFF;
+}
+
+[data-theme='3'] {
+    --color: #FFFFFF;
+    --background: #212A34;
+}
 
 .hw {
     padding: 24px 70px 32px 70px;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: var(--background);
 }
 
 .hwTitle {

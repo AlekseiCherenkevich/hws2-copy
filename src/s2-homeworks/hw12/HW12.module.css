@@ -19,5 +19,22 @@ html {
 }
 
 .select {
-
+    height: 36px;
+    width: 171px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    border: 1px solid var(--color);
+    background-color: var(--background);
+    color: var(--color);
+    outline: none;
 }
+
+
+
+.text {
+    margin-bottom: 10px;
+}
+
+
